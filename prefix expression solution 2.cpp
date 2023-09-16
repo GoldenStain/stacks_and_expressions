@@ -19,7 +19,6 @@ void calc()
     num.pop();
     double a = num.top();
     num.pop();
-    if(op.empty()) puts("empty");
     char c = op.top();
     op.pop();
     double res;
