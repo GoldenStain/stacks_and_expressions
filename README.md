@@ -176,5 +176,44 @@ int main()
 这是最为简单的一种情况，因为你不需要栈，仅用一个优美的递归就能解决这个问题。
 
 ### 1.
+```
+#include <stdio.h>
+#include <stdlib.h>
+char a[20];
+double expt()
+{
+    scanf("%s",a);
+    switch(a[0])
+    {
+        case '+':
+            return expt()+expt();
+        case '-':
+            return expt()-expt();
+        case '*':
+            return expt()*expt();
+        case '/':
+            return expt()/expt();
+        default:
+            return atof(a);
+    }
+    return a[0];
+}
+int main()
+{
+ 
+    double ans=0;
+    ans=expt();
+    printf("%lf\n",ans);
+    return 0;
+}
+
+```
+
+### 2.
+当然，因为这个问题也可以用循环和栈来实现。
+```
+
+```
+
 
 
