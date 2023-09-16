@@ -20,7 +20,6 @@ double expt()
 }
 int main()
 {
- 
     double ans=0;
     ans=expt();
     printf("%lf\n",ans);
