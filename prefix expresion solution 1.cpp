@@ -17,7 +17,6 @@ double expt()
         default:
             return atof(a);
     }
-    return a[0];
 }
 int main()
 {
