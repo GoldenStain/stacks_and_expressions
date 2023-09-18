@@ -1,5 +1,7 @@
 # stacks_and_expressions 用栈处理算数表达式的二三事
 
+以下代码均没有特判表达式是否合法，只在计算之后，进行简单的判断。
+
 ## 前置知识 二叉树结构的确定
 
 因为前缀表达式，中缀表达式，以及后缀表达式，本质上是对表达式树进行不同遍历方式所得到的结果，所以在进行表达式求解之前，我们有必要知道这三种结构的处理和转化。
@@ -267,7 +269,8 @@ int main()
             }
         }
     }
-    printf("%lf\n", num.top());
+    if(num.size() > 1) puts("error");
+    else printf("%lf\n", num.top());
     return 0;
 }
 ```
@@ -328,7 +331,8 @@ int main()
             num.push(n);
         }
     }
-    printf("%lf\n", num.top());
+    if(num.size() > 1) puts("error");
+    else printf("%lf\n", num.top());
     return 0;
 }
 ```
