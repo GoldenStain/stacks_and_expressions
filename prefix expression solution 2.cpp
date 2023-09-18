@@ -51,6 +51,7 @@ int main()
             }
         }
     }
-    printf("%lf\n", num.top());
+    if(num.size() > 1) puts("error");
+    else printf("%lf\n", num.top());
     return 0;
 }
