@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stack>
+#include <iostream>
 using namespace std;
 
 const int N = 1000005;
@@ -31,7 +32,7 @@ inline void calc()
 
 int main()
 {
-    while(scanf("%s", a) != -1)
+    while(cin >> a)
     {
         if(a[0] == '-' || a[0] == '+' || a[0] == '/' || a[0] == '*')
         {
